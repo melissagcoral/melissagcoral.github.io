@@ -283,4 +283,3 @@ h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 700; color: var(--plum)
 .edu__badge { display: inline-block; margin-top: 6px; font-weight: 700; color: var(--plum); font-size: .82rem; }
 @media (max-width: 900px) { .edu__list { grid-template-columns: 1fr; } }
 @media (max-width: 620px) { .tl { padding-left: 36px; } .tl h3 { font-size: 1.15rem; } }
-.girl { width: clamp(96px, 44%, 136px); height: auto; filter: drop-shadow(0 6px 10px rgba(120, 50, 40, .18)); }
