@@ -19,7 +19,7 @@
 
     "about.title": "A little about me",
     "about.where.k": "I'm in",
-    "about.where.p": "The strawberry town, on the shores of Lake Ypacaraí. I currently work remotely and I'm open to other arrangements.",
+    "about.where.p": "The town of strawberries and ceramics. I currently work remotely and I'm open to other arrangements.",
     "mode.remote": "Remote", "mode.onsite": "On-site", "mode.hybrid": "Hybrid",
     "about.been.k": "Where I've been",
     "about.now": "now",
@@ -83,7 +83,7 @@
 
     "fun.title": "What my CV doesn't say",
     "f1.t": "I live in strawberry land",
-    "f1.p": "Areguá is famous for its strawberries and ceramics. My office has a view of all that.",
+    "f1.p": "I live in a neighborhood near downtown Areguá, a town known for its strawberries and ceramics.",
     "f2.t": "Spanish, English and a little more",
     "f2.p": "Native Spanish, intermediate English, and basic Guaraní and Portuguese.",
     "f4.t": "My favorite project is called Amelia",
