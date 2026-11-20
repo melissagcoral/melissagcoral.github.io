@@ -14,7 +14,7 @@
     "hero.role": "Backend Engineer · .NET & Node.js",
     "hero.lead": "I got into programming out of pure curiosity, that urge to understand how things work on the inside. More than ten years later, that curiosity still drives me: today I build systems for banks and financial companies, and I still love figuring out how to solve each problem.",
     "hero.cta": "Contact me",
-    "hero.cv": "Download CV",
+    "hero.cv": "View CV",
     "hero.caption": "from Areguá, with coffee ♡",
 
     "about.title": "A little about me",
@@ -99,7 +99,7 @@
     "contact.li.k": "See my journey",
     "contact.gh.k": "See my code",
     "contact.cv.k": "All on one page",
-    "contact.cv": "My CV ↓",
+    "contact.cv": "My CV ↗",
     "footer": "Made with love in Areguá",
   };
 

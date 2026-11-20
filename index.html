@@ -40,7 +40,7 @@
         </p>
         <div class="hero__cta">
           <a class="btn btn--solid" href="#contacto" data-i18n="hero.cta">Contactame</a>
-          <a class="btn btn--line" href="assets/MelissaGonzalez_CV.pdf" download data-i18n="hero.cv">Descargar CV</a>
+          <a class="btn btn--line" href="assets/MelissaGonzalez_CV.pdf" target="_blank" rel="noopener" data-i18n="hero.cv">Ver CV</a>
         </div>
       </div>
 
@@ -187,7 +187,7 @@
       <ol class="timeline">
         <li class="tl tl--now">
           <div class="tl__when"><span class="tl__badge" data-i18n="exp.now">Actual</span> <span data-i18n="j1.when">Jun 2024 — Presente</span></div>
-          <h3><span data-i18n="j1.role">SSR Software Engineer</span> <span class="tl__at">@ ITTI S.A.E.C.A.</span></h3>
+          <h3><span data-i18n="j1.role">SSR Software Engineer</span> <span class="tl__at">@ ITTI S.A.E.</span></h3>
           <ul>
             <li data-i18n="j1.b1">Diseño de un nuevo sistema de originación de crédito en .NET 9 + PostgreSQL con Clean Architecture, EF Core Code-First, Repository y Unit of Work.</li>
             <li data-i18n="j1.b2">Migración del sistema PCA a .NET Core; corrección de bugs críticos de lógica financiera.</li>
@@ -278,7 +278,33 @@
         <h2 class="title-spark"><span data-i18n="fun.title">Lo que no dice mi CV</span></h2>
         <div class="facts">
           <article class="fact card--tilt-l">
-            <div class="fact__art fact__art--coral" aria-hidden="true">👧🏻</div>
+            <div class="fact__art fact__art--coral" aria-hidden="true">
+              <svg class="girl" viewBox="0 0 120 120">
+                <!-- coletas -->
+                <ellipse cx="22" cy="62" rx="13" ry="20" fill="#e9b949" transform="rotate(18 22 62)"/>
+                <ellipse cx="98" cy="62" rx="13" ry="20" fill="#e9b949" transform="rotate(-18 98 62)"/>
+                <circle cx="31" cy="44" r="5" fill="#e8735f"/>
+                <circle cx="89" cy="44" r="5" fill="#e8735f"/>
+                <!-- pelo de atrás -->
+                <circle cx="60" cy="58" r="36" fill="#f2cc5c"/>
+                <!-- cara -->
+                <ellipse cx="60" cy="66" rx="29" ry="28" fill="#fde2d0"/>
+                <!-- flequillo -->
+                <path d="M31 58 C 32 34, 50 24, 62 25 C 78 26, 90 36, 89 58 C 84 47, 76 42, 68 41 C 70 46, 66 49, 62 47 C 56 44, 50 41, 44 44 C 38 47, 34 52, 31 58 Z" fill="#f2cc5c"/>
+                <path d="M46 36 C 52 32, 60 31, 66 33" stroke="#fbe08f" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- ojos azules -->
+                <ellipse cx="49" cy="66" rx="5.2" ry="6.2" fill="#3b7dd8"/>
+                <ellipse cx="71" cy="66" rx="5.2" ry="6.2" fill="#3b7dd8"/>
+                <circle cx="49" cy="67" r="2.4" fill="#1f3c6e"/>
+                <circle cx="71" cy="67" r="2.4" fill="#1f3c6e"/>
+                <circle cx="50.8" cy="64" r="1.6" fill="#fff"/>
+                <circle cx="72.8" cy="64" r="1.6" fill="#fff"/>
+                <!-- cachetes y sonrisa -->
+                <ellipse cx="41" cy="77" rx="5" ry="3.2" fill="#f6a99a" opacity=".75"/>
+                <ellipse cx="79" cy="77" rx="5" ry="3.2" fill="#f6a99a" opacity=".75"/>
+                <path d="M53 80 Q 60 87 67 80" stroke="#c4523f" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
             <h3 data-i18n="f4.t">Mi proyecto favorito se llama Amelia</h3>
             <p data-i18n="f4.p">Es mi niña, y jugar con ella es la mejor parte de mi día, igual que disfrutar un tereré con mi esposo.</p>
           </article>
@@ -339,9 +365,9 @@
         </li>
         <li>
           <span class="label" data-i18n="contact.cv.k">Todo en una página</span>
-          <a href="assets/MelissaGonzalez_CV.pdf" download>
+          <a href="assets/MelissaGonzalez_CV.pdf" target="_blank" rel="noopener">
             <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico--line"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
-            <span data-i18n="contact.cv">Mi CV ↓</span>
+            <span data-i18n="contact.cv">Mi CV ↗</span>
           </a>
         </li>
       </ul>

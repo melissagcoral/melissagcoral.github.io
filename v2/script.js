@@ -15,7 +15,7 @@
     "hero.hello": "hi! I'm",
     "hero.sticker": "Backend Engineer ✦",
     "hero.lead": "From Areguá, Paraguay, I've spent over ten years building the systems behind banks and financial companies: the ones nobody sees, but that have to work <mark>always</mark>.",
-    "hero.cta": "Let's talk", "hero.cv": "Download CV",
+    "hero.cta": "Let's talk", "hero.cv": "View CV",
     "hero.status": "Open to new opportunities · remote",
 
     "about.kicker": "about me ↓",
@@ -69,7 +69,7 @@
     "c.kicker": "contact ↓",
     "c.title": "Shall we <mark>chat</mark>?",
     "c.lead": "Whether you have a project, a job opening or just want to swap ideas, write to me. I always reply.",
-    "c.copy": "Copy email", "c.cv": "CV as PDF ↓",
+    "c.copy": "Copy email", "c.cv": "CV as PDF ↗",
     "footer": "Made with love and coffee in Areguá",
   };
   const UI = {
