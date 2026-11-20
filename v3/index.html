@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melissa González Coral · Backend Engineer</title>
+  <meta name="description" content="Backend Engineer con +10 años en C#/.NET y Node.js. APIs REST, Clean Architecture y microservicios para sistemas financieros." />
+  <meta property="og:title" content="Melissa González Coral · Backend Engineer" />
+  <meta property="og:description" content="+10 años construyendo backends para banca y finanzas con .NET, Node.js y PostgreSQL." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d1117'/><text x='5' y='22' font-family='monospace' font-size='16' fill='%2339d353'>&gt;_</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Saltar al contenido</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top" aria-label="Inicio">
+      <span class="prompt">melissa@backend</span><span class="muted">:~$</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav__links">
+      <a href="#about">./sobre-mi</a>
+      <a href="#stack">./stack</a>
+      <a href="#projects">./proyectos</a>
+      <a href="#experience">./experiencia</a>
+      <a href="#contact">./contacto</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="window">
+        <div class="window__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="window__title">~/portfolio — zsh</span>
+        </div>
+        <div class="window__body">
+          <p class="line"><span class="prompt">$</span> <span id="typed" data-text="whoami"></span><span class="cursor" aria-hidden="true">▋</span></p>
+          <div class="hero__out" id="hero-out">
+            <h1>Melissa González Coral</h1>
+            <p class="hero__role"><span class="accent">Backend Engineer</span> · C# / .NET · Node.js · PostgreSQL</p>
+            <p class="hero__lead">
+              +10 años construyendo sistemas transaccionales para <strong>banca y finanzas</strong>,
+              donde la integridad de los datos y la disponibilidad no son negociables.
+            </p>
+            <p class="muted small">📍 Areguá, Paraguay · Disponible para remoto</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">ver proyectos</a>
+              <a class="btn" href="../assets/MelissaGonzalez_CV.pdf" download>descargar CV.pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="stats" aria-label="Resumen">
+        <li><strong>10+</strong><span>años de experiencia</span></li>
+        <li><strong>6</strong><span>empresas</span></li>
+        <li><strong>6</strong><span>motores de base de datos</span></li>
+        <li><strong>.NET 9</strong><span>en producción hoy</span></li>
+      </ul>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section__title"><span class="prompt">$</span> cat sobre-mi.md</h2>
+      <div class="about">
+        <div class="about__text">
+          <p>
+            Soy desarrolladora backend especializada en <strong>C# y .NET / .NET Core</strong>.
+            Diseño <strong>APIs REST</strong> con ASP.NET Core y Entity Framework Core, y
+            modernizo sistemas legacy hacia <strong>arquitecturas desacopladas y microservicios</strong>
+            aplicando Clean Architecture.
+          </p>
+          <p>
+            He trabajado en originación de crédito, homebanking y gestión financiera: sistemas
+            donde un bug no es un detalle visual, sino dinero mal calculado. Por eso me importan
+            el modelado del dominio, las migraciones reproducibles y la observabilidad en producción.
+          </p>
+          <p>
+            También construyo servicios en <strong>Node.js / Express / NestJS</strong>, y en 2025
+            completé un Diplomado FullStack como <em>Estudiante Destacada</em>.
+          </p>
+        </div>
+        <pre class="code" aria-label="Perfil en formato JSON"><code><span class="t-p">{</span>
+  <span class="t-k">"rol"</span>: <span class="t-s">"Backend Engineer"</span>,
+  <span class="t-k">"foco"</span>: [<span class="t-s">"APIs REST"</span>, <span class="t-s">"Clean Architecture"</span>, <span class="t-s">"Microservicios"</span>],
+  <span class="t-k">"dominio"</span>: [<span class="t-s">"banca"</span>, <span class="t-s">"crédito"</span>, <span class="t-s">"finanzas"</span>],
+  <span class="t-k">"educacion"</span>: <span class="t-s">"Lic. Ciencias Informáticas — UNA"</span>,
+  <span class="t-k">"idiomas"</span>: {
+    <span class="t-k">"es"</span>: <span class="t-s">"nativo"</span>, <span class="t-k">"en"</span>: <span class="t-s">"intermedio"</span>,
+    <span class="t-k">"gn"</span>: <span class="t-s">"básico"</span>, <span class="t-k">"pt"</span>: <span class="t-s">"básico"</span>
+  },
+  <span class="t-k">"abierta_a_oportunidades"</span>: <span class="t-b">true</span>
+<span class="t-p">}</span></code></pre>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <h2 class="section__title"><span class="prompt">$</span> ls -la ./stack</h2>
+      <div class="stack">
+        <div class="stack__group">
+          <h3>lenguajes/</h3>
+          <ul class="tags"><li class="tag tag--hi">C#</li><li class="tag">JavaScript</li><li class="tag">TypeScript</li><li class="tag tag--lo">Python</li></ul>
+        </div>
+        <div class="stack__group">
+          <h3>backend/</h3>
+          <ul class="tags"><li class="tag tag--hi">.NET Core / .NET 9</li><li class="tag tag--hi">ASP.NET Core</li><li class="tag">Node.js</li><li class="tag">Express.js</li><li class="tag">NestJS</li></ul>
+        </div>
+        <div class="stack__group">
+          <h3>bases-de-datos/</h3>
+          <ul class="tags"><li class="tag tag--hi">PostgreSQL</li><li class="tag tag--hi">SQL Server</li><li class="tag">Oracle</li><li class="tag">MongoDB</li><li class="tag">MySQL</li><li class="tag">DB2</li></ul>
+        </div>
+        <div class="stack__group">
+          <h3>orm-y-migraciones/</h3>
+          <ul class="tags"><li class="tag tag--hi">Entity Framework Core</li><li class="tag">Knex</li><li class="tag">Liquibase</li><li class="tag">DevExpress XPO</li></ul>
+        </div>
+        <div class="stack__group">
+          <h3>arquitectura/</h3>
+          <ul class="tags"><li class="tag tag--hi">Clean Architecture</li><li class="tag">Microservicios</li><li class="tag">Repository</li><li class="tag">Unit of Work</li></ul>
+        </div>
+        <div class="stack__group">
+          <h3>herramientas/</h3>
+          <ul class="tags"><li class="tag">Git</li><li class="tag">Docker</li><li class="tag">IIS</li><li class="tag">Serilog</li><li class="tag">Jest</li><li class="tag">Blazor</li><li class="tag">React</li></ul>
+        </div>
+      </div>
+      <p class="legend muted small"><span class="tag tag--hi">uso diario</span> <span class="tag">experiencia sólida</span> <span class="tag tag--lo">básico</span></p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section__title"><span class="prompt">$</span> curl -s api/proyectos | jq</h2>
+      <p class="muted section__note">Sistemas en producción para empresas del sector financiero. El código es propietario, así que muestro el problema, la arquitectura y mis decisiones.</p>
+
+      <div class="projects">
+        <article class="card card--feature">
+          <header class="card__head">
+            <span class="method method--post">POST</span>
+            <h3>/originacion-de-credito <span class="muted">v2</span></h3>
+            <span class="status">● 2024 — hoy</span>
+          </header>
+          <p>
+            Diseño de un nuevo sistema de originación de crédito desde cero en ITTI. Modelé el dominio
+            con <strong>Clean Architecture</strong> para que las reglas financieras vivan aisladas de la
+            infraestructura y se puedan probar sin base de datos.
+          </p>
+          <div class="arch" aria-label="Diagrama de capas">
+            <div class="arch__layer arch__layer--api">API <small>ASP.NET Core · controllers · DTOs</small></div>
+            <div class="arch__arrow">↓</div>
+            <div class="arch__layer arch__layer--app">Application <small>casos de uso · validaciones</small></div>
+            <div class="arch__arrow">↓</div>
+            <div class="arch__layer arch__layer--dom">Domain <small>entidades · reglas de crédito</small></div>
+            <div class="arch__arrow">↑</div>
+            <div class="arch__layer arch__layer--inf">Infrastructure <small>EF Core Code-First · Repository · Unit of Work · PostgreSQL</small></div>
+          </div>
+          <ul class="tags"><li class="tag tag--hi">.NET 9</li><li class="tag">EF Core</li><li class="tag">PostgreSQL</li><li class="tag">Clean Architecture</li></ul>
+        </article>
+
+        <article class="card">
+          <header class="card__head">
+            <span class="method method--put">PUT</span>
+            <h3>/pca/migracion</h3>
+            <span class="status">● 2024 — hoy</span>
+          </header>
+          <p>
+            Migración y mantenimiento del sistema PCA de originación de crédito a .NET Core con
+            PostgreSQL. Resolví <strong>bugs críticos de lógica financiera</strong> y mejoré la
+            integridad de los datos.
+          </p>
+          <p>
+            Implementé <strong>logging estructurado con Serilog</strong> para trazar errores en
+            producción y acortar el tiempo de diagnóstico del equipo.
+          </p>
+          <ul class="tags"><li class="tag">C# .NET Core</li><li class="tag">PostgreSQL</li><li class="tag">Serilog</li></ul>
+        </article>
+
+        <article class="card">
+          <header class="card__head">
+            <span class="method method--get">GET</span>
+            <h3>/microservicios</h3>
+            <span class="status">● 2022 — 2024</span>
+          </header>
+          <p>
+            APIs REST en <strong>Node.js y Express</strong> dentro de una arquitectura de
+            microservicios en Bepsa, integrando <strong>PostgreSQL, MongoDB y DB2</strong> en
+            sistemas de alto volumen operativo.
+          </p>
+          <p>
+            Migraciones versionadas con <strong>Knex y Liquibase</strong> para mantener los esquemas
+            consistentes entre desarrollo y producción.
+          </p>
+          <ul class="tags"><li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">MongoDB</li><li class="tag">DB2</li><li class="tag">Liquibase</li></ul>
+        </article>
+
+        <article class="card">
+          <header class="card__head">
+            <span class="method method--get">GET</span>
+            <h3>/homebanking</h3>
+            <span class="status">● 2016 — 2019</span>
+          </header>
+          <p>
+            Desarrollo y mantenimiento del <strong>homebanking de Banco Itaú Paraguay</strong>:
+            un sistema transaccional de alta disponibilidad usado por miles de clientes.
+          </p>
+          <p>
+            También desarrollé el sistema de gestión financiera de CAJUBI.
+          </p>
+          <ul class="tags"><li class="tag">C# .NET</li><li class="tag">SQL Server</li><li class="tag">Alta disponibilidad</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2 class="section__title"><span class="prompt">$</span> git log --author="melissa" --oneline</h2>
+      <ol class="log">
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">a3f9c21</span><span class="branch">HEAD → main</span><time>Jun 2024 — Presente</time></div>
+          <h3>SSR Software Engineer <span class="at">@ ITTI S.A.E.C.A.</span></h3>
+          <ul>
+            <li>Diseño de un nuevo sistema de originación de crédito en .NET 9 + PostgreSQL con Clean Architecture, EF Core Code-First, Repository y Unit of Work.</li>
+            <li>Migración del sistema PCA a .NET Core; corrección de bugs críticos de lógica financiera.</li>
+            <li>APIs REST con Node.js en arquitectura de microservicios.</li>
+            <li>Logging estructurado con Serilog para trazabilidad en producción.</li>
+          </ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">7be04d8</span><time>Feb 2022 — May 2024</time></div>
+          <h3>Desarrolladora Backend <span class="at">@ Bepsa del Paraguay S.A.E.C.A.</span></h3>
+          <ul>
+            <li>APIs REST con Node.js y Express en microservicios; integraciones con PostgreSQL, MongoDB y DB2 en alto volumen.</li>
+            <li>Modernización de módulos legacy en C# hacia arquitecturas desacopladas.</li>
+            <li>Gestión de migraciones con Knex y Liquibase.</li>
+          </ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">c41e2a0</span><time>Nov 2021 — Feb 2022</time></div>
+          <h3>Desarrolladora <span class="at">@ ITTI S.A.E.C.A.</span></h3>
+          <ul><li>Sistema SGR en C# con DevExpress XAF/XPO y SQL Server.</li></ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">e90b7f3</span><time>Jul 2019 — Nov 2021</time></div>
+          <h3>Desarrolladora <span class="at">@ Evoxys Software S.A.</span></h3>
+          <ul>
+            <li>Sistemas de gestión de RR.HH. para PyMEs en C# .NET Core y Blazor.</li>
+            <li>Sistema de gestión en C# y SQL Server.</li>
+          </ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">5d2a6c9</span><time>Abr 2019 — Jul 2019</time></div>
+          <h3>Analista / Desarrolladora <span class="at">@ IdTknology</span></h3>
+          <ul><li>CRM para Fortaleza S.A. en C# .NET Core y SQL Server.</li></ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">1fa83e4</span><time>Abr 2016 — Feb 2019</time></div>
+          <h3>Analista / Desarrolladora <span class="at">@ Roshka S.A.</span></h3>
+          <ul>
+            <li>Homebanking de Banco Itaú Paraguay en C# .NET y SQL Server (alta disponibilidad).</li>
+            <li>Sistema de gestión financiera de CAJUBI.</li>
+          </ul>
+        </li>
+        <li class="log__item">
+          <div class="log__meta"><span class="hash">0000001</span><span class="branch branch--init">initial commit</span><time>Oct 2013 — Abr 2016</time></div>
+          <h3>Analista / Desarrolladora <span class="at">@ Inverfín S.A.E.C.A.</span></h3>
+          <ul><li>Aplicación financiera en C# .NET y Oracle.</li></ul>
+        </li>
+      </ol>
+
+      <h3 class="subhead"><span class="prompt">$</span> cat educacion.txt</h3>
+      <ul class="edu">
+        <li><time>2025</time> Diplomado en FullStack — Universidad Comunera <span class="badge">★ Estudiante Destacada</span></li>
+        <li><time>2024</time> Introducción a Python — UNA, Facultad Politécnica</li>
+        <li><time>2017</time> Licenciatura en Ciencias Informáticas — UNA, Facultad Politécnica</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section__title"><span class="prompt">$</span> curl -X POST api/contacto</h2>
+      <div class="window window--contact">
+        <div class="window__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="window__title">HTTP/1.1 200 OK</span>
+        </div>
+        <div class="window__body">
+          <p class="contact__lead">¿Tienes un sistema que necesita un backend sólido? Hablemos.</p>
+          <ul class="contact">
+            <li>
+              <span class="t-k">email</span>
+              <a href="mailto:melissagcoral@gmail.com">melissagcoral@gmail.com</a>
+              <button class="copy" data-copy="melissagcoral@gmail.com" aria-label="Copiar email">copiar</button>
+            </li>
+            <li>
+              <span class="t-k">linkedin</span>
+              <a href="https://www.linkedin.com/in/melissagcoral" target="_blank" rel="noopener">linkedin.com/in/melissagcoral</a>
+            </li>
+            <li><span class="t-k">github</span><a href="https://github.com/melissagcoral" target="_blank" rel="noopener">github.com/melissagcoral</a></li>
+            <li>
+              <span class="t-k">cv</span>
+              <a href="../assets/MelissaGonzalez_CV.pdf" download>MelissaGonzalez_CV.pdf</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="muted small"><span class="prompt">$</span> exit 0 · © <span id="year"></span> Melissa González Coral</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

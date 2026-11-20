@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melissa González Coral · Backend Engineer</title>
+  <meta name="description" content="Backend Engineer en Paraguay. +10 años construyendo sistemas para banca y finanzas con .NET, Node.js y PostgreSQL." />
+  <meta property="og:title" content="Melissa González Coral · Backend Engineer" />
+  <meta property="og:description" content="+10 años construyendo sistemas confiables para banca y finanzas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%23e8735f'/><text x='16' y='22' text-anchor='middle' font-family='Arial' font-weight='700' font-size='17' fill='white'>M</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Caveat:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <div class="lang" role="group" aria-label="Idioma / Language">
+    <button data-lang="es" aria-pressed="true">ES</button>
+    <button data-lang="en" aria-pressed="false">EN</button>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero__text">
+        <h1>
+          <span data-i18n="hero.hi">Hola,</span><br />
+          <span class="underline"><span data-i18n="hero.name">soy Melissa González</span>
+            <svg viewBox="0 0 300 18" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 60 4, 120 16, 180 9 S 270 5, 297 10" /></svg>
+          </span>
+        </h1>
+        <p class="hero__role" data-i18n="hero.role">Backend Engineer · .NET & Node.js</p>
+        <p class="hero__lead" data-i18n="hero.lead">
+          Llegué a la programación por pura curiosidad, por esas ganas de entender cómo
+          funcionan las cosas por dentro. Más de diez años después, esa curiosidad sigue siendo
+          mi motor: hoy construyo sistemas para bancos y financieras, y todavía me encanta
+          descubrir cómo resolver cada problema.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="#contacto" data-i18n="hero.cta">Contactame</a>
+          <a class="btn btn--line" href="assets/MelissaGonzalez_CV.pdf" download data-i18n="hero.cv">Descargar CV</a>
+        </div>
+      </div>
+
+      <figure class="polaroid">
+        <span class="polaroid__circle" aria-hidden="true"></span>
+        <div class="polaroid__frame">
+          <div class="polaroid__photo">
+            <!-- Para usar tu foto: guardala como assets/foto.jpg y aparece sola -->
+            <div class="polaroid__placeholder" aria-hidden="true">
+              <span class="ph-emoji">👩🏻‍💻</span>
+              <span class="ph-steam">☕</span>
+            </div>
+            <img src="assets/foto.jpg" alt="Melissa González" onerror="this.remove()" />
+          </div>
+          <figcaption class="hand" data-i18n="hero.caption">desde Areguá, con café ♡</figcaption>
+        </div>
+      </figure>
+    </section>
+
+    <!-- ABOUT (dark) -->
+    <div class="wave wave--top" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 50 C 240 10, 480 10, 720 40 S 1200 80, 1440 30 L1440 80 L0 80 Z"/></svg></div>
+    <section class="dark" id="sobre-mi">
+      <div class="wrap">
+        <h2 class="title-arrow"><span data-i18n="about.title">Un poco sobre mí</span>
+          <svg class="arrow" viewBox="0 0 80 40" aria-hidden="true"><path d="M4 14 C 22 2, 48 4, 62 22" /><path d="M54 22 L63 24 L64 14" /></svg>
+        </h2>
+
+        <div class="about">
+          <article class="card card--tilt-l">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </span>
+            <p class="label" data-i18n="about.where.k">Estoy en</p>
+            <h3>Areguá, Paraguay.</h3>
+            <p data-i18n="about.where.p">La ciudad de las frutillas, a orillas del lago Ypacaraí. Trabajo en remoto.</p>
+          </article>
+
+          <article class="card card--tilt-r">
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>
+            </span>
+            <p class="label" data-i18n="about.been.k">Pasé por</p>
+            <ol class="path">
+              <li class="now">ITTI <small data-i18n="about.now">hoy</small></li>
+              <li>Bepsa del Paraguay</li>
+              <li>Evoxys Software</li>
+              <li>Roshka <small>(Banco Itaú)</small></li>
+              <li>Inverfín</li>
+            </ol>
+          </article>
+
+          <article class="card card--tilt-l2">
+            <p class="label" data-i18n="about.venn.k">Me muevo entre</p>
+            <svg class="venn" viewBox="0 0 240 210" role="img" aria-label=".NET, Node.js y Bases de datos; en el centro, Backend">
+              <circle cx="85" cy="80" r="58" class="v1" />
+              <circle cx="155" cy="80" r="58" class="v2" />
+              <circle cx="120" cy="140" r="58" class="v3" />
+              <text x="70" y="70">.NET</text>
+              <text x="170" y="70">Node.js</text>
+              <text x="120" y="172" data-i18n="about.venn.db">Datos</text>
+              <text x="120" y="108" class="center">✦</text>
+            </svg>
+            <p class="venn__note" data-i18n="about.venn.note">…y en el medio, lo que más disfruto: el backend.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="wave wave--bottom" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 30 C 300 80, 600 70, 900 40 S 1300 0, 1440 30 L1440 0 L0 0 Z"/></svg></div>
+
+    <!-- PROJECTS -->
+    <section class="wrap section" id="proyectos">
+      <h2 data-i18n="proj.title">Mi trabajo en proyectos</h2>
+      <p class="sub" data-i18n="proj.sub">Problemas reales, las decisiones que tomé y lo que aprendí. Tocá cada tarjeta para leer más.</p>
+
+      <div class="cases">
+        <details class="case case--coral">
+          <summary>
+            <span class="case__n" data-i18n="c1.n">Caso 01 · ITTI · 2024 — hoy</span>
+            <ul class="pills"><li>.NET 9</li><li>Clean Architecture</li><li>PostgreSQL</li></ul>
+            <h3 data-i18n="c1.q">¿Cómo se diseña un sistema de crédito desde cero?</h3>
+            <span class="squiggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case__body" data-i18n="c1.a">
+            <p>Me tocó diseñar el nuevo sistema de originación de crédito. Lo armé por capas (API, aplicación, dominio e infraestructura) para que las reglas del negocio vivan separadas de la base de datos y se puedan probar sin miedo.</p>
+            <p><strong>Decisiones:</strong> Entity Framework Core Code-First, patrones Repository y Unit of Work, y PostgreSQL.</p>
+          </div>
+        </details>
+
+        <details class="case case--lilac">
+          <summary>
+            <span class="case__n" data-i18n="c2.n">Caso 02 · ITTI · 2024</span>
+            <ul class="pills"><li>.NET Core</li><li>Serilog</li><li>Legacy</li></ul>
+            <h3 data-i18n="c2.q">¿Qué hacés cuando un sistema crítico calcula mal?</h3>
+            <span class="squiggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case__body" data-i18n="c2.a">
+            <p>Migré el sistema PCA de originación de crédito a .NET Core y corregí bugs críticos de lógica financiera, mejorando la integridad de los datos.</p>
+            <p><strong>Lo que aprendí:</strong> sin buenos logs no hay diagnóstico. Sumé logging estructurado con Serilog y el equipo empezó a encontrar errores mucho más rápido.</p>
+          </div>
+        </details>
+
+        <details class="case case--sage">
+          <summary>
+            <span class="case__n" data-i18n="c3.n">Caso 03 · Bepsa · 2022 — 2024</span>
+            <ul class="pills"><li>Node.js</li><li>Microservicios</li><li>DB2</li></ul>
+            <h3 data-i18n="c3.q">¿Cómo hacés que tres bases de datos convivan en paz?</h3>
+            <span class="squiggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case__body" data-i18n="c3.a">
+            <p>Diseñé APIs REST en Node.js y Express dentro de una arquitectura de microservicios de alto volumen, integrando PostgreSQL, MongoDB y DB2.</p>
+            <p><strong>La clave:</strong> migraciones versionadas con Knex y Liquibase, para que desarrollo y producción nunca se desincronicen. También modernicé módulos legacy en C#.</p>
+          </div>
+        </details>
+
+        <details class="case case--sand">
+          <summary>
+            <span class="case__n" data-i18n="c4.n">Caso 04 · Roshka · 2016 — 2019</span>
+            <ul class="pills"><li>Frontend</li><li data-i18n="c4.pill">Banca digital</li><li data-i18n="c4.pill2">Alta disponibilidad</li></ul>
+            <h3 data-i18n="c4.q">¿Cómo es trabajar en un sistema que no se puede caer?</h3>
+            <span class="squiggle" aria-hidden="true"></span>
+          </summary>
+          <div class="case__body" data-i18n="c4.a">
+            <p>Desarrollé y mantuve el frontend del homebanking de Banco Itaú Paraguay, un sistema transaccional que tenía que estar disponible todo el tiempo. También el sistema de gestión financiera de CAJUBI.</p>
+            <p><strong>Lo que aprendí:</strong> cuando miles de personas dependen de un sistema, cada cambio que pasa a producción se cuida al detalle.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="stack">
+        <p class="label" data-i18n="stack.k">Con qué trabajo</p>
+        <ul class="pills pills--lg">
+          <li>C#</li><li>.NET / ASP.NET Core</li><li>Entity Framework Core</li><li>Node.js</li><li>NestJS</li><li>Express</li><li>TypeScript</li>
+          <li>PostgreSQL</li><li>SQL Server</li><li>Oracle</li><li>MongoDB</li><li>MySQL</li><li>DB2</li>
+          <li>Docker</li><li>Git</li><li>Jest</li><li>Liquibase</li><li>Knex</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <section class="wrap section section--tight" id="experiencia">
+      <h2 data-i18n="exp.title">Mi recorrido</h2>
+      <p class="sub" data-i18n="exp.sub">Más de diez años, seis empresas y muchas líneas de código.</p>
+
+      <ol class="timeline">
+        <li class="tl tl--now">
+          <div class="tl__when"><span class="tl__badge" data-i18n="exp.now">Actual</span> <span data-i18n="j1.when">Jun 2024 — Presente</span></div>
+          <h3><span data-i18n="j1.role">SSR Software Engineer</span> <span class="tl__at">@ ITTI S.A.E.C.A.</span></h3>
+          <ul>
+            <li data-i18n="j1.b1">Diseño de un nuevo sistema de originación de crédito en .NET 9 + PostgreSQL con Clean Architecture, EF Core Code-First, Repository y Unit of Work.</li>
+            <li data-i18n="j1.b2">Migración del sistema PCA a .NET Core; corrección de bugs críticos de lógica financiera.</li>
+            <li data-i18n="j1.b3">APIs REST con Node.js en arquitectura de microservicios.</li>
+            <li data-i18n="j1.b4">Logging estructurado con Serilog para trazabilidad en producción.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when">Feb 2022 — May 2024</div>
+          <h3><span data-i18n="j2.role">Desarrolladora Backend</span> <span class="tl__at">@ Bepsa del Paraguay S.A.E.C.A.</span></h3>
+          <ul>
+            <li data-i18n="j2.b1">APIs REST con Node.js y Express en microservicios; integraciones con PostgreSQL, MongoDB y DB2 en alto volumen.</li>
+            <li data-i18n="j2.b2">Modernización de módulos legacy en C# hacia arquitecturas desacopladas.</li>
+            <li data-i18n="j2.b3">Gestión de migraciones con Knex y Liquibase.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when">Nov 2021 — Feb 2022</div>
+          <h3><span data-i18n="j3.role">Desarrolladora</span> <span class="tl__at">@ ITTI S.A.E.C.A.</span></h3>
+          <ul>
+            <li data-i18n="j3.b1">Sistema SGR en C# con DevExpress XAF/XPO y SQL Server.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when">Jul 2019 — Nov 2021</div>
+          <h3><span data-i18n="j4.role">Desarrolladora</span> <span class="tl__at">@ Evoxys Software S.A.</span></h3>
+          <ul>
+            <li data-i18n="j4.b1">Sistemas de gestión de RR.HH. para PyMEs en C# .NET Core y Blazor.</li>
+            <li data-i18n="j4.b2">Sistema de gestión en C# y SQL Server.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when" data-i18n="j5.when">Abr 2019 — Jul 2019</div>
+          <h3><span data-i18n="j5.role">Analista / Desarrolladora</span> <span class="tl__at">@ IdTknology</span></h3>
+          <ul>
+            <li data-i18n="j5.b1">CRM para Fortaleza S.A. en C# .NET Core y SQL Server.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when" data-i18n="j6.when">Abr 2016 — Feb 2019</div>
+          <h3><span data-i18n="j6.role">Analista / Desarrolladora</span> <span class="tl__at">@ Roshka S.A.</span></h3>
+          <ul>
+            <li data-i18n="j6.b1">Homebanking de Banco Itaú Paraguay en C# .NET y SQL Server (alta disponibilidad).</li>
+            <li data-i18n="j6.b2">Sistema de gestión financiera de CAJUBI.</li>
+          </ul>
+        </li>
+        <li class="tl">
+          <div class="tl__when" data-i18n="j7.when">Oct 2013 — Abr 2016</div>
+          <h3><span data-i18n="j7.role">Analista / Desarrolladora</span> <span class="tl__at">@ Inverfín S.A.E.C.A.</span></h3>
+          <ul>
+            <li data-i18n="j7.b1">Aplicación financiera en C# .NET y Oracle.</li>
+          </ul>
+        </li>
+      </ol>
+
+      <div class="edu">
+        <p class="label" data-i18n="edu.k">Educación</p>
+        <ul class="edu__list">
+          <li class="edu__item edu__item--star">
+            <span class="edu__year">2025</span>
+            <div>
+              <h3 data-i18n="edu1.t">Diplomado en FullStack</h3>
+              <p>Universidad Comunera <span class="edu__badge" data-i18n="edu1.badge">★ Estudiante Destacada</span></p>
+            </div>
+          </li>
+          <li class="edu__item">
+            <span class="edu__year">2024</span>
+            <div>
+              <h3 data-i18n="edu2.t">Introducción a Python</h3>
+              <p data-i18n="edu.una">UNA, Facultad Politécnica</p>
+            </div>
+          </li>
+          <li class="edu__item">
+            <span class="edu__year">2017</span>
+            <div>
+              <h3 data-i18n="edu3.t">Licenciatura en Ciencias Informáticas</h3>
+              <p data-i18n="edu.una2">UNA, Facultad Politécnica</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FUN FACTS (dark) -->
+    <div class="wave wave--top" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40 C 200 0, 520 70, 820 40 S 1260 10, 1440 50 L1440 80 L0 80 Z"/></svg></div>
+    <section class="dark" id="mas-de-mi">
+      <div class="wrap">
+        <h2 class="title-spark"><span data-i18n="fun.title">Lo que no dice mi CV</span></h2>
+        <div class="facts">
+          <article class="fact card--tilt-l">
+            <div class="fact__art fact__art--coral" aria-hidden="true">👧🏻</div>
+            <h3 data-i18n="f4.t">Mi proyecto favorito se llama Amelia</h3>
+            <p data-i18n="f4.p">Es mi niña, y jugar con ella es la mejor parte de mi día, igual que disfrutar un tereré con mi esposo.</p>
+          </article>
+          <article class="fact card--tilt-r">
+            <div class="fact__art fact__art--sand" aria-hidden="true">📚</div>
+            <h3 data-i18n="f5.t">Leer es mi pausa favorita</h3>
+            <p data-i18n="f5.p">Un buen libro es mi forma de desconectar después de un día de código.</p>
+          </article>
+          <article class="fact card--tilt-l2">
+            <div class="fact__art fact__art--lilac" aria-hidden="true">🎧</div>
+            <h3 data-i18n="f6.t">Siempre con música</h3>
+            <p data-i18n="f6.p">Me acompaña en todo: para concentrarme, para relajarme y para el día a día.</p>
+          </article>
+          <article class="fact card--tilt-r">
+            <div class="fact__art fact__art--sage" aria-hidden="true">🍓</div>
+            <h3 data-i18n="f1.t">Vivo en la tierra de las frutillas</h3>
+            <p data-i18n="f1.p">Areguá es famosa por sus frutillas y su cerámica. Mi oficina tiene vista a eso.</p>
+          </article>
+          <article class="fact card--tilt-l2">
+            <div class="fact__art fact__art--coral" aria-hidden="true">💬</div>
+            <h3 data-i18n="f2.t">Español, inglés y un poquito más</h3>
+            <p data-i18n="f2.p">Español nativo, inglés intermedio, y guaraní y portugués en nivel básico.</p>
+          </article>
+          <article class="fact card--tilt-l">
+            <div class="fact__art fact__art--sand" aria-hidden="true">🎓</div>
+            <h3 data-i18n="f3.t">Nunca dejo de estudiar</h3>
+            <p data-i18n="f3.p">Diez años después de empezar, terminé un Diplomado FullStack como Estudiante Destacada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <div class="wave wave--bottom" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40 C 360 90, 720 0, 1080 40 S 1380 60, 1440 40 L1440 0 L0 0 Z"/></svg></div>
+
+    <!-- CONTACT -->
+    <section class="wrap contact" id="contacto">
+      <h2 data-i18n="contact.title">¿Y si construimos algo juntos?</h2>
+      <ul class="contact__list">
+        <li>
+          <span class="label" data-i18n="contact.mail.k">Escribime</span>
+          <a href="mailto:melissagcoral@gmail.com">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico--line"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg></span>
+            <span>melissagcoral@gmail.com</span>
+          </a>
+        </li>
+        <li>
+          <span class="label" data-i18n="contact.li.k">Mirá mi recorrido</span>
+          <a href="https://www.linkedin.com/in/melissagcoral" target="_blank" rel="noopener">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></span>
+            <span>LinkedIn ↗</span>
+          </a>
+        </li>
+        <li>
+          <span class="label" data-i18n="contact.gh.k">Mirá mi código</span>
+          <a href="https://github.com/melissagcoral" target="_blank" rel="noopener">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.31.76-1.6-2.67-.31-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .32.21.69.82.57A12 12 0 0 0 12 .3"/></svg></span>
+            <span>GitHub ↗</span>
+          </a>
+        </li>
+        <li>
+          <span class="label" data-i18n="contact.cv.k">Todo en una página</span>
+          <a href="assets/MelissaGonzalez_CV.pdf" download>
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" class="ico--line"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></span>
+            <span data-i18n="contact.cv">Mi CV ↓</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span data-i18n="footer">Hecho con cariño desde Areguá</span> · © <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

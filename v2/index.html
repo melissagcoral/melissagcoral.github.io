@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Melissa González Coral · Backend Engineer</title>
+  <meta name="description" content="Backend Engineer en Paraguay. +10 años construyendo sistemas para banca y finanzas con .NET, Node.js y PostgreSQL." />
+  <meta property="og:title" content="Melissa González Coral · Backend Engineer" />
+  <meta property="og:description" content="+10 años construyendo sistemas confiables para banca y finanzas." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='10' fill='%23c95c82'/><text x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='800' font-size='18' fill='white'>m</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top">mel<span>✦</span>gonzález</a>
+    <nav id="nav-links" class="nav__links">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#experiencia" data-i18n="nav.exp">Experiencia</a>
+      <a href="#proyectos" data-i18n="nav.proj">Proyectos</a>
+      <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="#mas-alla" data-i18n="nav.beyond">Más allá</a>
+      <a href="#contacto" class="nav__cta" data-i18n="nav.contact">Contacto</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="lang" aria-label="Switch to English" title="Español / English">
+        <span data-l="es">ES</span><span data-l="en">EN</span>
+      </button>
+      <button class="theme" aria-label="Cambiar tema claro u oscuro" title="Cambiar tema">
+        <span class="theme__sun">☀︎</span><span class="theme__moon">☾</span>
+      </button>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="blob blob--1" aria-hidden="true"></div>
+      <div class="blob blob--2" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <p class="hand hero__hello" data-i18n="hero.hello">¡hola! soy</p>
+        <h1 class="hero__name">
+          Melissa<br />González Coral
+          <span class="sticker" data-i18n="hero.sticker">Backend Engineer ✦</span>
+        </h1>
+        <p class="hero__lead" data-i18n="hero.lead">
+          Desde Areguá, Paraguay, construyo hace más de diez años los sistemas que están detrás de
+          bancos y financieras: esos que nadie ve, pero que tienen que funcionar <mark>siempre</mark>.
+        </p>
+        <p class="hero__tags">
+          <span>C# · .NET</span><span>Node.js</span><span>PostgreSQL</span><span>Clean Architecture</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contacto" data-i18n="hero.cta">Hablemos</a>
+          <a class="btn btn--ghost" href="../assets/MelissaGonzalez_CV.pdf" download data-i18n="hero.cv">Descargar CV</a>
+        </div>
+        <p class="hero__status"><span class="pulse" aria-hidden="true"></span> <span data-i18n="hero.status">Abierta a nuevas oportunidades · remoto</span></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="sobre-mi" class="section">
+      <div class="section__head">
+        <p class="hand kicker" data-i18n="about.kicker">sobre mí ↓</p>
+        <h2 data-i18n="about.title">Ordenar lo complejo es <mark>lo mío</mark></h2>
+      </div>
+      <div class="about">
+        <div class="about__text">
+          <p data-i18n="about.p1">
+            Empecé programando aplicaciones financieras en 2013 y desde entonces no me fui del
+            mundo de los números serios: <strong>homebanking, originación de crédito, gestión financiera</strong>.
+            Ahí aprendí que un bug no es solo un error en pantalla, es el dinero de alguien.
+          </p>
+          <p data-i18n="about.p2">
+            Hoy diseño APIs y modernizo sistemas legacy hacia arquitecturas más limpias y fáciles
+            de mantener. Me gusta entender el negocio antes de escribir código, explicar las
+            cosas con calma y dejar todo un poquito mejor de como lo encontré.
+          </p>
+        </div>
+        <ul class="values">
+          <li>
+            <span class="values__icon" aria-hidden="true">🌱</span>
+            <h3 data-i18n="v1.t">Cuidar los detalles</h3>
+            <p data-i18n="v1.p">La integridad de los datos no se negocia. Reviso dos veces y pruebo tres.</p>
+          </li>
+          <li>
+            <span class="values__icon" aria-hidden="true">🧩</span>
+            <h3 data-i18n="v2.t">Simplificar</h3>
+            <p data-i18n="v2.p">Transformo sistemas enredados en piezas claras que el equipo entiende.</p>
+          </li>
+          <li>
+            <span class="values__icon" aria-hidden="true">📚</span>
+            <h3 data-i18n="v3.t">Aprender siempre</h3>
+            <p data-i18n="v3.p">En 2025 terminé un Diplomado FullStack como Estudiante Destacada.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experiencia" class="section">
+      <div class="section__head">
+        <p class="hand kicker" data-i18n="exp.kicker">mi recorrido ↓</p>
+        <h2 data-i18n="exp.title">Más de una década <mark>construyendo</mark></h2>
+      </div>
+      <ol class="timeline">
+        <li class="job job--current">
+          <div class="job__when" data-i18n="j1.when">Jun 2024 — hoy</div>
+          <div class="job__body">
+            <h3><span data-i18n="j1.role">SSR Software Engineer</span> <span class="job__at">@ ITTI</span></h3>
+            <p data-i18n="j1.p">Diseño un nuevo sistema de originación de crédito en .NET 9 y PostgreSQL con Clean Architecture, y migré el sistema PCA corrigiendo bugs críticos de lógica financiera. Sumé logging con Serilog para que el equipo encuentre errores más rápido.</p>
+            <ul class="chips"><li>.NET 9</li><li>EF Core</li><li>PostgreSQL</li><li>Node.js</li><li>Serilog</li></ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when">Feb 2022 — May 2024</div>
+          <div class="job__body">
+            <h3><span data-i18n="j2.role">Desarrolladora Backend</span> <span class="job__at">@ Bepsa del Paraguay</span></h3>
+            <p data-i18n="j2.p">APIs REST en Node.js y Express dentro de microservicios de alto volumen, integrando PostgreSQL, MongoDB y DB2. Modernización de módulos legacy en C# y migraciones con Knex y Liquibase.</p>
+            <ul class="chips"><li>Node.js</li><li>Express</li><li>MongoDB</li><li>DB2</li><li>Liquibase</li></ul>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when">Nov 2021 — Feb 2022</div>
+          <div class="job__body">
+            <h3><span data-i18n="j3.role">Desarrolladora</span> <span class="job__at">@ ITTI</span></h3>
+            <p data-i18n="j3.p">Sistema SGR en C# con DevExpress XAF/XPO y SQL Server.</p>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when">Jul 2019 — Nov 2021</div>
+          <div class="job__body">
+            <h3><span data-i18n="j4.role">Desarrolladora</span> <span class="job__at">@ Evoxys Software</span></h3>
+            <p data-i18n="j4.p">Sistemas de gestión de RR.HH. para PyMEs con .NET Core y Blazor.</p>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when" data-i18n="j5.when">Abr 2019 — Jul 2019</div>
+          <div class="job__body">
+            <h3><span data-i18n="j5.role">Analista / Desarrolladora</span> <span class="job__at">@ IdTknology</span></h3>
+            <p data-i18n="j5.p">CRM para Fortaleza S.A. en .NET Core y SQL Server.</p>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when" data-i18n="j6.when">Abr 2016 — Feb 2019</div>
+          <div class="job__body">
+            <h3><span data-i18n="j6.role">Analista / Desarrolladora</span> <span class="job__at">@ Roshka</span></h3>
+            <p data-i18n="j6.p">Homebanking de Banco Itaú Paraguay y sistema de gestión financiera de CAJUBI, en C# .NET y SQL Server.</p>
+          </div>
+        </li>
+        <li class="job">
+          <div class="job__when" data-i18n="j7.when">Oct 2013 — Abr 2016</div>
+          <div class="job__body">
+            <h3><span data-i18n="j7.role">Analista / Desarrolladora</span> <span class="job__at">@ Inverfín</span></h3>
+            <p data-i18n="j7.p">Donde empezó todo: una aplicación financiera en C# .NET y Oracle.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="proyectos" class="section">
+      <div class="section__head">
+        <p class="hand kicker" data-i18n="proj.kicker">proyectos ↓</p>
+        <h2 data-i18n="proj.title">Cosas de las que estoy <mark>orgullosa</mark></h2>
+      </div>
+      <div class="projects">
+        <article class="project project--rose project--wide">
+          <p class="project__tag" data-i18n="p1.tag">2024 — hoy · ITTI</p>
+          <h3 data-i18n="p1.t">Un sistema de crédito, desde cero</h3>
+          <p data-i18n="p1.p">
+            Diseñar un sistema nuevo es una oportunidad que no llega seguido. Lo armé por capas,
+            para que las reglas del negocio vivan separadas de la base de datos y se puedan
+            probar y cambiar sin miedo.
+          </p>
+          <div class="layers" aria-label="Capas de la arquitectura">
+            <span>API</span><span data-i18n="l.app">Aplicación</span><span data-i18n="l.dom">Dominio</span><span data-i18n="l.inf">Infraestructura</span>
+          </div>
+          <ul class="chips"><li>.NET 9</li><li>Clean Architecture</li><li>EF Core</li><li>PostgreSQL</li></ul>
+        </article>
+        <article class="project project--lilac">
+          <p class="project__tag">2024 · ITTI</p>
+          <h3 data-i18n="p2.t">Rescatar un sistema crítico</h3>
+          <p data-i18n="p2.p">Migré el sistema PCA a .NET Core, corregí errores en cálculos financieros y sumé logs claros para que el equipo duerma más tranquilo.</p>
+          <ul class="chips"><li>.NET Core</li><li>Serilog</li></ul>
+        </article>
+        <article class="project project--peach">
+          <p class="project__tag">2022 — 2024 · Bepsa</p>
+          <h3 data-i18n="p3.t">Microservicios de alto volumen</h3>
+          <p data-i18n="p3.p">APIs en Node.js que conversan con tres bases de datos distintas, con migraciones versionadas para que nada se rompa al pasar a producción.</p>
+          <ul class="chips"><li>Node.js</li><li>MongoDB</li><li>DB2</li></ul>
+        </article>
+        <article class="project project--sage">
+          <p class="project__tag">2016 — 2019 · Roshka</p>
+          <h3 data-i18n="p4.t">El homebanking de miles de personas</h3>
+          <p data-i18n="p4.p">Desarrollo y mantenimiento del homebanking de Banco Itaú Paraguay, un sistema que tenía que estar disponible todo el tiempo.</p>
+          <ul class="chips"><li>C# .NET</li><li>SQL Server</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="habilidades" class="section">
+      <div class="section__head">
+        <p class="hand kicker" data-i18n="sk.kicker">habilidades ↓</p>
+        <h2 data-i18n="sk.title">Mi caja de <mark>herramientas</mark></h2>
+      </div>
+      <div class="skills">
+        <div class="skills__group">
+          <h3>Backend</h3>
+          <ul class="chips chips--lg"><li class="fav">C#</li><li class="fav">.NET / ASP.NET Core</li><li>Node.js</li><li>NestJS</li><li>Express</li><li>TypeScript</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3 data-i18n="sk.db">Bases de datos</h3>
+          <ul class="chips chips--lg"><li class="fav">PostgreSQL</li><li class="fav">SQL Server</li><li>Oracle</li><li>MongoDB</li><li>MySQL</li><li>DB2</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3 data-i18n="sk.arch">Arquitectura y datos</h3>
+          <ul class="chips chips--lg"><li class="fav">Clean Architecture</li><li data-i18n="sk.micro">Microservicios</li><li>Entity Framework Core</li><li>Knex</li><li>Liquibase</li></ul>
+        </div>
+        <div class="skills__group">
+          <h3 data-i18n="sk.more">Y también</h3>
+          <ul class="chips chips--lg"><li>Git</li><li>Docker</li><li>Jest</li><li>Blazor</li><li>React</li><li>Python</li></ul>
+        </div>
+      </div>
+      <p class="skills__note"><span class="fav-dot"></span> <span data-i18n="sk.note">Mis favoritas, las que uso todos los días</span></p>
+    </section>
+
+    <!-- BEYOND CODE -->
+    <section id="mas-alla" class="section">
+      <div class="section__head">
+        <p class="hand kicker" data-i18n="b.kicker">más allá del código ↓</p>
+        <h2 data-i18n="b.title">Un poquito <mark>más de mí</mark></h2>
+      </div>
+      <div class="beyond">
+        <div class="beyond__card">
+          <span class="beyond__emoji" aria-hidden="true">🍓</span>
+          <h3 data-i18n="b1.t">Desde Areguá</h3>
+          <p data-i18n="b1.p">Vivo en la ciudad de las frutillas y la cerámica, a orillas del lago Ypacaraí. Trabajo en remoto con equipos de todo el país.</p>
+        </div>
+        <div class="beyond__card">
+          <span class="beyond__emoji" aria-hidden="true">💬</span>
+          <h3 data-i18n="b2.t">Cuatro idiomas</h3>
+          <p data-i18n="b2.p">Español nativo, inglés intermedio, y un poquito de guaraní y portugués. Siempre lista para practicar.</p>
+        </div>
+        <div class="beyond__card">
+          <span class="beyond__emoji" aria-hidden="true">🎓</span>
+          <h3 data-i18n="b3.t">Curiosa por naturaleza</h3>
+          <p data-i18n="b3.p">Licenciada en Ciencias Informáticas por la UNA. Después de diez años sigo estudiando: FullStack, Python y lo que venga.</p>
+        </div>
+        <!-- Agrega aquí tus hobbies: lectura, mascotas, música, viajes... (y su traducción en script.js) -->
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contacto" class="section contact">
+      <p class="hand kicker" data-i18n="c.kicker">contacto ↓</p>
+      <h2 data-i18n="c.title">¿Charlamos <mark>un ratito</mark>?</h2>
+      <p class="contact__lead" data-i18n="c.lead">Si tenés un proyecto, una vacante o simplemente querés intercambiar ideas, escribime. Respondo siempre.</p>
+      <a class="contact__mail" href="mailto:melissagcoral@gmail.com">melissagcoral@gmail.com</a>
+      <div class="contact__links">
+        <button class="btn btn--ghost copy" data-copy="melissagcoral@gmail.com" data-i18n="c.copy">Copiar email</button>
+        <a class="btn btn--ghost" href="https://www.linkedin.com/in/melissagcoral" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn btn--ghost" href="../assets/MelissaGonzalez_CV.pdf" download data-i18n="c.cv">CV en PDF ↓</a>
+        <!-- <a class="btn btn--ghost" href="https://github.com/TU_USUARIO" target="_blank" rel="noopener">GitHub ↗</a> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><span data-i18n="footer">Hecho con cariño y café desde Areguá</span> · © <span id="year"></span> Melissa González Coral</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
