@@ -19,7 +19,8 @@
 
     "about.title": "A little about me",
     "about.where.k": "I'm in",
-    "about.where.p": "The strawberry town, on the shores of Lake Ypacaraí. I work remotely.",
+    "about.where.p": "The strawberry town, on the shores of Lake Ypacaraí. I currently work remotely and I'm open to other arrangements.",
+    "mode.remote": "Remote", "mode.onsite": "On-site", "mode.hybrid": "Hybrid",
     "about.been.k": "Where I've been",
     "about.now": "now",
     "about.venn.k": "I move between",
