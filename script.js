@@ -122,7 +122,31 @@
     buttons.forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
     vennLabel.setAttribute("aria-label", VENN[lang]);
     store.set("lang", lang);
+    updateThemeLabel();
   }
+
+  /* ---------- Tema claro / oscuro ----------
+     Si la persona no eligió, sigue la preferencia de su sistema. */
+  const themeBtn = document.querySelector(".theme");
+  const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : systemDark.matches;
+  const THEME_LABEL = {
+    es: { toDark: "Cambiar a modo oscuro", toLight: "Cambiar a modo claro" },
+    en: { toDark: "Switch to dark mode", toLight: "Switch to light mode" },
+  };
+  function updateThemeLabel() {
+    const l = THEME_LABEL[root.lang === "en" ? "en" : "es"];
+    themeBtn.setAttribute("aria-label", isDark() ? l.toLight : l.toDark);
+  }
+  themeBtn.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    store.set("theme", next);
+    updateThemeLabel();
+  });
+  systemDark.addEventListener("change", updateThemeLabel);
+  updateThemeLabel();
+
   const saved = store.get("lang");
   const initial = saved || ((navigator.language || "es").toLowerCase().startsWith("es") ? "es" : "en");
   if (initial !== "es") setLang(initial);
